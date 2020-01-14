@@ -1,0 +1,67 @@
+<nav id="navbar-example2" class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['home']"><img
+    src="https://www.fidias.net/wp-content/uploads/2015/04/logo-negativo.png"></a>
+
+<!--  Codigo oculto que se muestra al loguearse-->
+  <ul class="nav" >
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['micuenta']">Mi Cuenta</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['contacto']">Contacto</a>
+    </li>
+    <li class="nav-item">
+      <div class="social">
+        <a href="https://es-es.facebook.com/Fidiasentrenamiento/" class="[ social-icon facebook ] animate"><span
+          class="fa fa-facebook"></span></a>
+        <a href="https://twitter.com/fidiasentrena?lang=es" class="[ social-icon twitter ] animate"><span
+          class="fa fa-twitter"></span></a>
+        <a href="https://es.linkedin.com/company/formacion-integral-deportiva-analisis-y-seguimiento"
+           class="[ social-icon linkedin ] animate"><span
+          class="fa fa-linkedin"></span></a>
+      </div>
+    </li>
+  </ul>
+  <!--  Codigo oculto que se muestra al loguearse-->
+
+
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['conocenos']">Conócenos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['center']">Fidas Center</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['formacion']">Formacion</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['online']">Online</a>
+    </li>
+
+
+<!--    Se supone que debe loguearse puesto que en auth0 me sale que me logueo, pero no lo hace bien-->
+<!--    al volver del login me devuelve esta URL-->
+<!--    http://localhost:4200/callback?code=ZqSSOMoy_rEJWae1&state=SnZkZFpfWHVXYUxveXBtaDVhREp5QXZLbHFuUFVGZjFzR1IuU29iVUp1Vw%3D%3D-->
+
+<!--    <button *ngIf="auth.loggedIn" class="btn btn-outline-primary" (click)="auth.login()">-->
+<!--      LogIn-->
+<!--    </button>-->
+<!--    <button *ngIf="!auth.loggedIn" class="btn btn-outline-danger" (click)="auth.logout()">-->
+<!--      LogOut-->
+<!--    </button>-->
+
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+  </ul>
+</nav>

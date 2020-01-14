@@ -1,0 +1,26 @@
+
+
+
+<div>
+  <div class="card-columns" *ngIf="curso == null">
+    <div class="card" *ngFor="let curso of cursos">
+      <img [src]="curso.img" class="card-img-top img-fluid" alt="pelicula.original_title">
+      <div class="card-body">
+        <h5 class="card-title"> {{ curso.name }}</h5>
+        <button (click)="ir(curso.id)"
+                type="button" name="button"
+                class="btn btn-outline-primary btn-block">
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div align="center" *ngIf="curso!=null">
+    <img  src="{{curso.img}}"/><br>
+    <p class="container">{{curso.descripcion}}</p>
+  </div>
+</div>
+
+

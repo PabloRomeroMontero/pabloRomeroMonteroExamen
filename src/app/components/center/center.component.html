@@ -1,0 +1,33 @@
+<div>
+  <div *ngIf="centro==null">
+    <h1>Centros disponibles</h1>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let centroInf of centros">
+        <button class="btn btn-primary btn-lg btn-block" (click)="ir(centroInf.id)">{{centroInf.name}}</button></li>
+    </ul>
+  </div>
+  <div *ngIf="centro!=null">
+    <img src="{{centro.img}}"/>
+    <p class="container">{{centro.descripcion}}</p>
+
+    <div align="center"
+         class="vc_general vc_cta3 vc_cta3-style-classic vc_cta3-shape-rounded vc_cta3-align-center vc_cta3-color-classic vc_cta3-icon-size-md vc_cta3-actions-bottom">
+      <div class="vc_cta3_content-container">
+        <div class="vc_cta3-content">
+          <header class="vc_cta3-content-header"><h2>Contacta con nosotros</h2><h4>Te damos cita para tu valoración
+            gratuita</h4></header>
+          <p align="center"><font color="#000000">Esta valoración es gratuita y sin compromiso, y será realizada por uno
+            de nuestros especialistas según tu objetivo o problema.</font></p>
+        </div>
+        <div class="vc_cta3-actions">
+          <div class="vc_btn3-container vc_btn3-center">
+            <button class="btn btn-secondary btn-lg btn-block">
+              <i class="vc_btn3-icon fa fa-volume-control-phone"></i> LLÁMANOS AL 956 872 619
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
